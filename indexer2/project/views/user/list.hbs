@@ -1,0 +1,24 @@
+<h3><a class="btn btn-secondary" href="/user"><i class="fa fa-plus"></i> Novo Usuário</a> Lista de Usuários</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Twitter URL</th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.Name}}</td>
+            <td>{{this.twitter_url}}</td>
+            
+            <td>
+                <a href="/user/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/user/delete/{{this._id}}" onclick="return confirm('Deseja Mesmo Excluir o Registro ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

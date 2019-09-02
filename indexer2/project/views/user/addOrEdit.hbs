@@ -1,0 +1,22 @@
+<h3>Cadastro</h3>
+
+<form action="/user" method="POST" autocomplete="off"> 
+    <input type="hidden" name="_id" value="{{user._id}}">
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" name="Name" placeholder="Name" value="{{user.Name}}">
+        <div class="text-danger">
+            {{user.NameError}}</div>
+    </div>
+    <div class="form-group">
+        <label>Twitter URL</label>
+        <input type="text" class="form-control" name="twitter_url" placeholder="Twitter URL" value="{{user.twitter_url}}">
+        <div class="text-danger">
+            {{user.twitter_url}}</div>
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Salvar</button>
+        <a class="btn btn-secondary" href="/user/list"><i class="fa fa-list-alt"></i> Listar</a>
+    </div>
+</form>
