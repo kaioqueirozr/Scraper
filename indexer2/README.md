@@ -5,8 +5,9 @@
 
 ###### Como executa-lo :
 | Abra seu Prompt de comando e digite:
-| cd e o [caminho da pasta do arquivo onde estiver salvo o projeto]
-| Assim que estiver na pasta onde reside o arquivo digite: node server.js
+| cd e o [caminho da pasta do arquivo onde estiver salvo projeto]
+| em seguida digite: npm i --s express@4.16.4 mongoose@5.3.4 express-handlebars@3.0.0 body-parser@1.18.3
+| Assim que  digitar o comando acima pasta onde reside o arquivo digite: node server.js
 | Após executar o comando, aguarde a conexão e então abra seu navegador e digite: http://localhost:3000/user
 | a aplicação irá abrir e estará pronta para o uso.
 
